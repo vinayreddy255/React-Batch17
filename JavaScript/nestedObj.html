@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    var nestObj = {
+      name: "Krishan",
+      age: 25,
+      address: {
+        pincode: 1234,
+        landMark: "Near bank",
+        mandal: "Nellore",
+        name: "Vamsee",
+      },
+      city: "Bangalore",
+      salar: 234543,
+    };
+    nestObj.address.name = "xyz";
+
+    var name = "city";
+
+    console.log(nestObj["name"]); //Bangalore
+    console.log(nestObj.city);
+    console.log(nestObj.address);
+    console.log(nestObj.address.landMark);
+    console.log(nestObj.address.name);
+  </script>
+</html>
