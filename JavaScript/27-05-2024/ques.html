@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    console.log(typeof "Hello"); //string
+    console.log(typeof 1234); //number
+    console.log(typeof ""); // sting
+    console.log(typeof typeof 1234); // string numbere
+    console.log(10 < 5 < 6); // true =1 false =0
+
+    var a = 10;
+    var b = 20;
+
+    var c = { name: "ram", age: 12 };
+    var d = { name: "ram", age: 12 };
+    var e = d;
+    e.name = "Kiran";
+    console.log(e); //
+    console.log(d); //
+
+    console.log(a === b); //false
+    console.log(a != b); // tue
+
+    console.log("object comparesion1==", c == d); //false
+    console.log("object comparesion1===", c === d); // false
+    console.log("object comparesion1===", e === d); //fasle
+  </script>
+</html>
