@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" />
+    <input type="text" />
+    <button>Click</button>
+  </body>
+  <script>
+    var str = "Hello React abc"; //[h, e, l, l, o ....], [hello, react] ["Hello React"]
+    var rstr = "hello abc hello world abc test react js, angular js, vew js";
+    console.log("string length>>>", str.length);
+    console.log("charter>>>", str.charAt(1));
+    var name = "my name is ram";
+    var merge = str.concat(" and ", name, " React world");
+    // console.log(str+'and'+name)
+    console.log(merge);
+    console.log("index value>>", str.indexOf("React"));
+    console.log("index value>>", str.lastIndexOf("e"));
+
+    console.log("inculdes>>", str.includes("r"));
+    console.log(str.toUpperCase());
+    console.log(str.toLowerCase());
+
+    var newStr = rstr.replace("hello", "hi");
+    var allRplce = rstr.replaceAll("hello", "hi");
+    console.log("replace...", newStr);
+    console.log("allRplce All...", allRplce);
+
+    var ear = str.split(" ");
+    console.log(ear);
+    var subss = str.substr(2, 7);
+    console.log("sub string...", subss);
+    var abc = "   Bangalore   ";
+    console.log(abc.trim().length);
+    console.log(abc.length);
+
+    // input: 'hello react js world';
+    // outpu1: 'Hello React Js World';
+    // outpu2: 'hellO reacT jS worlD';
+    // outpu3: 'HellO ReacT JS WorlD';
+    // outpu4: 'hELLo rEACt JS wORLd';
+    // output5: world js react hello
+
+    //inputbox
+  </script>
+</html>
