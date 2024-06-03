@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    //input: 'hello react js world';
+    // outpu4: 'hELLo rEACt js wORLd';
+
+    var input = "hello react js world";
+    var ar = input.split(" ");
+    var ouput = "";
+    console.log(ar);
+    for (var i = 0; i < ar.length; i++) {
+      //   console.log(ar[i]); //hello
+      var f = ar[i][0]; //h
+      var l = ar[i][ar[i].length - 1]; //o
+      var btween = ar[i].substr(1, ar[i].length - 2); // ell
+      var cup = btween.toUpperCase();
+      var finalStr = f + cup + l;
+      ouput += finalStr + " ";
+    }
+    console.log(ouput);
+  </script>
+</html>
