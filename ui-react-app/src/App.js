@@ -9,6 +9,8 @@ import AddToList from './Components/20-06-2024/AddToList';
 import ComponentA from './Components/24-06-2024/ComponentA';
 import CondationAlRendering from './Components/24-06-2024/CondationAlRendering';
 import RectForgment from './Components/26-06-2024/RectForgment';
+import UseEffectHook from './Components/17-07-2024/UseEffectHook';
+import UseEffectApiCall from './Components/17-07-2024/UseEffectApiCall';
 function App() {
   return (
     < >
@@ -28,7 +30,7 @@ function App() {
       {/* <ComponentA />
       <CondationAlRendering /> */}
       {/* 26-06-2024 */}
-      <RectForgment name="Hello">
+      {/* <RectForgment name="Hello" >
         <div>
           <h3>Hello React js world, html, css, js, hyderbad</h3>
           <ul>
@@ -38,8 +40,11 @@ function App() {
             <li>4</li>
           </ul>
         </div>
-      </RectForgment>
+      </RectForgment> */}
 
+      {/* 17-07-2024 */}
+      <UseEffectHook />
+      <UseEffectApiCall />
     </>
   );
 }
