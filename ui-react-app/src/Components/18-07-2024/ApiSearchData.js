@@ -4,6 +4,7 @@ function ApiSearchData() {
     const [data, setData] = useState([]);
     const [mainData, setMainData] = useState([])
     useEffect(() => {
+        //fetch
         axios.get('https://jsonplaceholder.typicode.com/users').then(res => {
             setData(res.data)
             setMainData(res.data)
