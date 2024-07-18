@@ -11,6 +11,9 @@ import CondationAlRendering from './Components/24-06-2024/CondationAlRendering';
 import RectForgment from './Components/26-06-2024/RectForgment';
 import UseEffectHook from './Components/17-07-2024/UseEffectHook';
 import UseEffectApiCall from './Components/17-07-2024/UseEffectApiCall';
+import React from 'react';
+import Context1 from './Contexts/Context1';
+import ApiSearchData from './Components/18-07-2024/ApiSearchData';
 function App() {
   return (
     < >
@@ -43,8 +46,12 @@ function App() {
       </RectForgment> */}
 
       {/* 17-07-2024 */}
-      <UseEffectHook />
-      <UseEffectApiCall />
+
+      {/* <UseEffectHook />
+        <UseEffectApiCall /> */}
+
+      {/* 18-07-2024 */}
+      <ApiSearchData />
     </>
   );
 }
