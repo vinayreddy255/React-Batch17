@@ -12,6 +12,10 @@ function ComponentA() {
 
     useEffect(() => {
         inputRef.current.value = 'Abc Test'
+        console.log(inputRef)
+        inputRef.current.style.backgroundColor = 'red'
+        inputRef.current.style.fontSize = '30px'
+        // inputRef.current.style.css = { backgroundColor: 'red', fontSize: '30px' }
     }, [])
 
     return (
