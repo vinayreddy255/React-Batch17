@@ -15,7 +15,7 @@ import React from 'react';
 import Context1 from './Contexts/Context1';
 import ApiSearchData from './Components/18-07-2024/ApiSearchData';
 import ComponentA from './Components/19-07-2024/ComponentA';
-
+import MemoHooks from './Components/22-07-2024/MemoHooks';
 import { ContextApp1, ContextApp2 } from './Components/19-07-2024/ContextApp';
 
 function App() {
@@ -64,9 +64,13 @@ function App() {
 
           {/* 19-07-2024 */}
 
-          <ComponentA />
+          {/* <ComponentA /> */}
+
         </ContextApp2.Provider>
       </ContextApp1.Provider>
+
+      {/* 22-07-2024 */}
+      <MemoHooks />
     </>
 
   );
