@@ -17,6 +17,35 @@ import ApiSearchData from './Components/18-07-2024/ApiSearchData';
 import ComponentA from './Components/19-07-2024/ComponentA';
 import MemoHooks from './Components/22-07-2024/MemoHooks';
 import { ContextApp1, ContextApp2 } from './Components/19-07-2024/ContextApp';
+import Home from './Components/23-07-2024/Home';
+import Countact from './Components/23-07-2024/Contact';
+import About from './Components/23-07-2024/About';
+import Prodcts from './Components/23-07-2024/Products';
+// import {
+//   createBrowserRouter, RouterProvider,
+//   BrowserRouter
+// } from "react-router-dom";
+
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <Home />,
+//   },
+//   {
+//     path: "/about",
+//     element: <About />,
+//   },
+//   {
+//     path: "/countactus",
+//     element: <Countact />,
+//   },
+//   {
+//     path: "/Prodcts",
+//     element: <Prodcts />,
+//   },
+// ]);
 
 function App() {
   const empList = [{ name: 'Sam', age: 28, city: 'Hyderbad', id: 100 },
@@ -70,7 +99,25 @@ function App() {
       </ContextApp1.Provider>
 
       {/* 22-07-2024 */}
-      <MemoHooks />
+      {/* <MemoHooks /> */}
+
+      {/* 23-07-2024 */}
+      <BrowserRouter>
+        <div>
+          <li><Link to={'/'}>Home</Link></li>
+          <li><Link to={'/About'}>About us</Link></li>
+          <li><Link to={'/Contact'}>Contact us</Link></li>
+          <li><Link to={'/Prodcts'}>Prodcts List</Link></li>
+          {/* <Outlet /> */}
+        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Contact" element={<Countact />} />
+          <Route path="/Prodcts" element={<Prodcts />} />
+        </Routes>
+      </BrowserRouter>
+
     </>
 
   );
