@@ -21,6 +21,8 @@ import Home from './Components/23-07-2024/Home';
 import Countact from './Components/23-07-2024/Contact';
 import About from './Components/23-07-2024/About';
 import Prodcts from './Components/23-07-2024/Products';
+import ParentCompoent from './Components/25-07-2024/ParentCompoent';
+import ApiCall from './Components/25-07-2024/APiCall';
 // import {
 //   createBrowserRouter, RouterProvider,
 //   BrowserRouter
@@ -117,7 +119,9 @@ function App() {
           <Route path="/Prodcts" element={<Prodcts />} />
         </Routes>
       </BrowserRouter>
-
+      {/* 25-07-2024 */}
+      <ParentCompoent />
+      <ApiCall />
     </>
 
   );
