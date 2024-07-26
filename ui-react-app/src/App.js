@@ -23,6 +23,7 @@ import About from './Components/23-07-2024/About';
 import Prodcts from './Components/23-07-2024/Products';
 import ParentCompoent from './Components/25-07-2024/ParentCompoent';
 import ApiCall from './Components/25-07-2024/APiCall';
+import CounterRedux from './Components/Counter-24-07/CounterRedux';
 // import {
 //   createBrowserRouter, RouterProvider,
 //   BrowserRouter
@@ -120,8 +121,12 @@ function App() {
         </Routes>
       </BrowserRouter>
       {/* 25-07-2024 */}
-      <ParentCompoent />
-      <ApiCall />
+      {/* <ParentCompoent /> */}
+      {/* <ApiCall /> */}
+
+      {/* 26-07-2024 */}
+
+      <CounterRedux />
     </>
 
   );
