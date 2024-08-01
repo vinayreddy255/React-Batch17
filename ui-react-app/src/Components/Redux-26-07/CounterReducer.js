@@ -16,4 +16,15 @@ function CounterReducer(state = intailsState, action) {
     }
 }
 
-export { CounterReducer }
+const proDctState = {
+    list: [{ name: 'Nokia', price: 1000 }],
+}
+function ProductList(state = proDctState, action) {
+    switch (action.type) {
+        case 'Add':
+            return { ...state, list: state.list.push(action.data) }
+        default:
+            return { ...state }
+    }
+}
+export { CounterReducer, ProductList }
